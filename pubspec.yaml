@@ -3,6 +3,10 @@ description: "A Flutter plugin to listen for volume key press events on Android 
 version: 0.0.1
 homepage: https://github.com/meetleev
 repository: https://github.com/meetleev/flutter_volume_key_board
+topics:
+  - volumeup
+  - volumedown
+  - volumepress
 
 environment:
   sdk: ">=2.18.0 <4.0.0"
