@@ -14,8 +14,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final ValueNotifier<String> _valueNotifier = ValueNotifier('press Volume key');
-  int _num =0;
+  final ValueNotifier<String> _valueNotifier =
+      ValueNotifier('press Volume key');
+  int _num = 0;
   @override
   void initState() {
     VolumeKeyBoard.instance.addListener((event) {

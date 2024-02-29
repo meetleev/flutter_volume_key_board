@@ -21,6 +21,7 @@ class VolumeKeyBoard {
 
   /// Use android because android is called twice.
   int _volumePressIdx = 0;
+
   /// Used to monitor android volume button presses
   Function(VolumeKey value)? _volumeCallBack;
 

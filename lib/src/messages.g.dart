@@ -29,11 +29,14 @@ class VolumeKeyBoardInterface {
       : __pigeon_binaryMessenger = binaryMessenger;
   final BinaryMessenger? __pigeon_binaryMessenger;
 
-  static const MessageCodec<Object?> pigeonChannelCodec = StandardMessageCodec();
+  static const MessageCodec<Object?> pigeonChannelCodec =
+      StandardMessageCodec();
 
   Future<void> addListener() async {
-    const String __pigeon_channelName = 'dev.flutter.pigeon.volume_key_board.VolumeKeyBoardInterface.addListener';
-    final BasicMessageChannel<Object?> __pigeon_channel = BasicMessageChannel<Object?>(
+    const String __pigeon_channelName =
+        'dev.flutter.pigeon.volume_key_board.VolumeKeyBoardInterface.addListener';
+    final BasicMessageChannel<Object?> __pigeon_channel =
+        BasicMessageChannel<Object?>(
       __pigeon_channelName,
       pigeonChannelCodec,
       binaryMessenger: __pigeon_binaryMessenger,
@@ -54,8 +57,10 @@ class VolumeKeyBoardInterface {
   }
 
   Future<void> removeListener() async {
-    const String __pigeon_channelName = 'dev.flutter.pigeon.volume_key_board.VolumeKeyBoardInterface.removeListener';
-    final BasicMessageChannel<Object?> __pigeon_channel = BasicMessageChannel<Object?>(
+    const String __pigeon_channelName =
+        'dev.flutter.pigeon.volume_key_board.VolumeKeyBoardInterface.removeListener';
+    final BasicMessageChannel<Object?> __pigeon_channel =
+        BasicMessageChannel<Object?>(
       __pigeon_channelName,
       pigeonChannelCodec,
       binaryMessenger: __pigeon_binaryMessenger,
